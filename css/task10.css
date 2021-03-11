@@ -1,0 +1,75 @@
+.body{
+    font-family: 'Dancing Script', cursive;
+}
+.navigation{
+    display: inline-block;
+    background-color: white;
+    height: 640px;
+    position: fixed;
+    z-index: 999;
+    left: 0px;
+    top: 0px;
+}
+.parent{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.middle{
+    /* background: rgba(255,255,255,.9); */
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 150px;
+    text-align: center;
+}
+.parrent img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+.parent:hover img{
+    opacity: 0.1;
+}
+.parent:hover .middle{
+    opacity: 1;
+}
+.content{
+    /* background-color: seagreen; */
+    /* background: rgba(255,255,255,.9); */
+    position: relative;
+}
+.content h3 a{
+    color: #191919;
+    text-decoration: none;
+    font-size: 2.25rem;
+    /* font-family: 'Poppins', sans-serif; */
+}
+.content a{
+    font-size: 0.875rem;
+    color: #a6a6a6;
+}
+.pt-20{
+    padding-top: 14rem;
+}
+@media(max-width:761)
+{
+    .navigation{
+        display: inline-block;
+        background-color: white;
+        height: 640px;
+        position: fixed;
+        z-index: 999;
+        left: 0px;
+        top: 0px;
+        display: block;
+        flex-direction: row;
+    }
+}
+
